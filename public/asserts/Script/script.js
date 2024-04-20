@@ -1,6 +1,10 @@
 // Initialize userScore to keep track of the user's score
 let userScore = 0;
 
+const BE_URL = "https://quiz-app-nu-dusky.vercel.app/api/v1"
+// const BE_URL = "http://localhost:3000/api/v1"
+
+
 // Retrieve the username from local storage
 const getUserName = localStorage.getItem("name");
 
@@ -58,7 +62,7 @@ async function startQuiz() {
       localStorage.getItem("name");
 
     // Fetch questions from the server and display them
-    const response = await fetch("http://localhost:3000/api/v1/questions");
+    const response = await fetch(`${BE_URL}/questions`);
     const data = await response.json();
     displayQuestions(data);
   } catch (error) {
@@ -144,7 +148,7 @@ if (!allQuestionsAnswered) {
 
   try {
     // Send a POST request to check the answers
-    const response = await fetch("http://localhost:3000/api/v1/check-answer", {
+    const response = await fetch(`${BE_URL}/check-answer`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -207,7 +211,7 @@ async function quizUploadHandler() {
 
  
   console.log(formData);
-  const response = await fetch(`http://localhost:3000/api/v1/questions` , {
+  const response = await fetch(`${BE_URL}/questions` , {
     method:'POST',
     headers:{
       "content-type":"application/json"
