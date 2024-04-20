@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="asserts/Style/style.css"/>
+   <script src="asserts/Script/script.js"></script>
+   <title>Upload Question</title>
+</head>
+
+<body>
+   <div class="alert" style="display:none">
+      <div class="alert-message"></div>
+   </div>
+   <div class="main-container">
+      <h1>Upload Quiz</h1>
+      <div class="container">
+         <div class="container-item">
+            <lable class="label">Question</lable>
+            <textarea id="questionName" required> </textarea>
+         </div>
+         <div class="container-item">
+            <label class="label">Option 1</label>
+            <textarea id="optionOne" type="text" required></textarea>
+         </div>
+         <div class="container-item">
+            <label class="label">Option 2</label>
+            <textarea id="optionTwo" type="text" required></textarea>
+         </div>
+         <div class="container-item">
+            <label class="label">Option 3</label>
+            <textarea id="optionThree" type="text" required></textarea>
+         </div>
+         <div class="container-item">
+            <label class="label">Option 4</label>
+            <textarea id="optionFour" type="text" required></textarea>
+         </div>
+         <div class="container-item">
+            <label class="label">Correct Answer</label>
+            <select id="correctAnswer" required>
+               <option value="none">Select</option>
+               <option value="optionOne">Option 1</option>
+               <option value="optionTwo">Option 2</option>
+               <option value="optionThree">Option 3</option>
+               <option value="optionFour">Option 4</option>
+            </select>
+         </div>
+         <div class="container-item">
+            <label class="label">Feedback</label>
+            <textarea id="feedback" type="text" required></textarea>
+         </div>
+      </div>
+      <div>
+         <button class="submit-btn " onclick="quizUploadHandler()">Submit</button>
+      </div>
+   </div>
+</body>
+
+</html>

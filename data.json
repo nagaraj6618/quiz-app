@@ -1,0 +1,131 @@
+[
+   {
+   "_id": "66236c9660cd81482273e92c",
+   "question": "What are modules in Node.js?",
+   "options": [
+   "A way to manage relational databases in Node.js",
+   "A system for organizing JavaScript code into reusable pieces",
+   "A tool for front-end development in Node.js",
+   "A runtime environment for executing Node.js code"
+   ],
+   "correctanswer": "A system for organizing JavaScript code into reusable pieces",
+   "__v": 0,
+   "feedback": "Node.js is a runtime environment for executing JavaScript code outside the browser. It uses the V8 JavaScript engine from Google Chrome and allows developers to run JavaScript on the server-side. It is commonly used for building scalable network applications, thanks to its event-driven, non-blocking I/O model. Remember, Node.js is not a JavaScript framework for building web applications, a relational database management system, or a front-end development tool."
+   },
+   {
+   "_id": "6623702ad040150ec08303c4",
+   "question": "What is Node.js?",
+   "options": [
+   "A JavaScript framework for building web applications",
+   "A runtime environment for executing JavaScript code outside the browser",
+   "A relational database management system",
+   "A front-end development tool"
+   ],
+   "correctanswer": "A runtime environment for executing JavaScript code outside the browser",
+   "__v": 0
+   },
+   {
+   "_id": "6623c3df1a924cbd42f99da1",
+   "question": "What are CommonJS modules in Node.js?",
+   "options": [
+   "A specification for defining APIs in Node.js",
+   "A pattern for writing asynchronous code in Node.js",
+   "A system for organizing JavaScript code into reusable pieces",
+   "A module for handling common programming tasks in Node.js"
+   ],
+   "feedback": "CommonJS modules in Node.js provide a way to structure JavaScript code into reusable components. They encapsulate functionality within a module and allow for easy sharing of code between different parts of an application. Modules can be imported and exported using the `require` and `module.exports` statements.",
+   "correctanswer": "A system for organizing JavaScript code into reusable pieces",
+   "__v": 0
+   },
+   {
+   "_id": "6623c3df1a924cbd42f99da0",
+   "question": "What is the event loop in Node.js?",
+   "options": [
+   "A feature for scheduling events at specific intervals",
+   "A mechanism for handling asynchronous operations in Node.js",
+   "A system for managing memory allocation in Node.js",
+   "A tool for visualizing code execution flow in Node.js"
+   ],
+   "feedback": "The event loop is a crucial part of Node.js that enables non-blocking, asynchronous behavior. It allows Node.js to perform I/O operations without blocking the execution of other code. Asynchronous operations in Node.js are managed by registering callback functions, which are invoked when I/O operations complete.",
+   "correctanswer": "A mechanism for handling asynchronous operations in Node.js",
+   "__v": 0
+   },
+   {
+   "_id": "6623c3df1a924cbd42f99da4",
+   "question": "What is the purpose of the 'exports' object in Node.js?",
+   "options": [
+   "To define custom middleware functions in Node.js",
+   "To expose functions and variables from a module in Node.js",
+   "To manage the memory allocation of a Node.js application",
+   "To execute asynchronous operations in Node.js"
+   ],
+   "feedback": "The 'exports' object in Node.js is used to expose functions, objects, or variables from a module to other modules or files in a Node.js application. By assigning properties or methods to 'exports', developers can make them accessible to other parts of the application when the module is imported using the 'require' function.",
+   "correctanswer": "To expose functions and variables from a module in Node.js",
+   "__v": 0
+   },
+   {
+   "_id": "6623c3df1a924cbd42f99da5",
+   "question": "What is the purpose of the 'module' object in Node.js?",
+   "options": [
+   "To define custom middleware functions in Node.js",
+   "To expose functions and variables from a module in Node.js",
+   "To manage the memory allocation of a Node.js application",
+   "To execute asynchronous operations in Node.js"
+   ],
+   "feedback": "The 'module' object in Node.js is used to expose functions, objects, or variables from a module to other modules or files in a Node.js application. It provides metadata about the current module and allows developers to export functionality using the 'exports' property.",
+   "correctanswer": "To expose functions and variables from a module in Node.js",
+   "__v": 0
+   },
+   {
+   "_id": "6623c3df1a924cbd42f99da6",
+   "question": "What is the purpose of the 'process' object in Node.js?",
+   "options": [
+   "To define custom middleware functions in Node.js",
+   "To manage the memory allocation of a Node.js application",
+   "To execute asynchronous operations in Node.js",
+   "To provide information about the current Node.js process"
+   ],
+   "feedback": "The 'process' object in Node.js provides information and control over the current Node.js process. It allows developers to access environment variables, command-line arguments, and other process-related information. The 'process' object also provides methods for exiting the current process, setting process-level event handlers, and managing child processes.",
+   "correctanswer": "To provide information about the current Node.js process",
+   "__v": 0
+   },
+   {
+   "_id": "6623c3df1a924cbd42f99da7",
+   "question": "What is the purpose of the 'fs' module in Node.js?",
+   "options": [
+   "To define custom middleware functions in Node.js",
+   "To manage the memory allocation of a Node.js application",
+   "To execute file system operations in Node.js",
+   "To provide information about the current Node.js process"
+   ],
+   "feedback": "The 'fs' module in Node.js provides functionality for interacting with the file system. It allows developers to perform various file-related operations such as reading from and writing to files, creating directories, and manipulating file permissions. The 'fs' module is part of Node.js's core modules and is commonly used in applications for file I/O tasks.",
+   "correctanswer": "To execute file system operations in Node.js",
+   "__v": 0
+   },
+   {
+   "_id": "6623c3df1a924cbd42f99da2",
+   "question": "What is the purpose of the 'require' function in Node.js?",
+   "options": [
+   "To import built-in modules in Node.js",
+   "To include external libraries in Node.js projects",
+   "To define custom middleware functions in Node.js",
+   "To execute asynchronous operations in Node.js"
+   ],
+   "feedback": "The 'require' function in Node.js is used to import built-in and external modules into a Node.js application. It allows developers to access functionality provided by other modules and use them in their own code. Modules loaded with 'require' are cached to improve performance.",
+   "correctanswer": "To import built-in modules in Node.js",
+   "__v": 0
+   },
+   {
+   "_id": "6623c3df1a924cbd42f99da3",
+   "question": "What is a callback function in Node.js?",
+   "options": [
+   "A function that is called at the end of a program's execution",
+   "A function passed as an argument to another function, to be executed later",
+   "A function that handles HTTP requests in Node.js",
+   "A function for converting synchronous code to asynchronous code in Node.js"
+   ],
+   "feedback": "In Node.js, a callback function is a function that is passed as an argument to another function and is intended to be executed at a later time or after the completion of an asynchronous operation. Callbacks are commonly used to handle asynchronous tasks such as reading files, making network requests, and handling events.",
+   "correctanswer": "A function passed as an argument to another function, to be executed later",
+   "__v": 0
+   }
+   ]

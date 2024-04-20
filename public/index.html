@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="./asserts/Style/style.css" />
+    <!-- Link to external JavaScript file -->
+    <script src="./asserts/Script/script.js"></script>
+    <!-- Set the document title -->
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <!-- Main heading -->
+    <h1>Quiz App</h1>
+    <!-- Form for entering username -->
+    <div id="username-form">
+      <form id="usernameForm">
+        <!-- Input field for username -->
+        <input
+          type="text"
+          id="username-input"
+          placeholder="Enter your username"
+          required
+        />
+        <!-- Button to start the quiz -->
+        <button type="submit" id="startButton">Start Quiz</button>
+      </form>
+    </div>
+    <!-- Display user's score -->
+    <div id="score" style="display: none">
+      <!-- Placeholder for displaying the username -->
+      <span id="username-name">Name</span>
+      <!-- Display the user's score -->
+      Score: <span id="scoreValue">0</span>
+    </div>
+    <!-- Container for quiz questions -->
+    <div id="questions-container" style="display: none"></div>
+    <!-- Button to submit answers -->
+    <button
+      id="submitButton"
+      type="button"
+      style="display: none"
+      onclick="checkAllAnswers()"
+    >
+      Submit Answers
+    </button>
+    <!-- Button to restart the quiz -->
+    <button
+      id="restart"
+      type="button"
+      style="display: none"
+      onclick="restart()"
+    >
+      Restart
+    </button>
+  </body>
+</html>

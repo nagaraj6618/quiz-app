@@ -1,0 +1,204 @@
+/* Set default font family, margin, and padding for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center-align the heading */
+h1 {
+  text-align: center;
+}
+
+/* Style for the username form */
+#username-form {
+  margin: 50px auto; /* Center the form horizontally with some top margin */
+  text-align: center; /* Center-align the contents of the form */
+}
+
+/* Style for the username input field */
+#username-input {
+  padding: 10px; /* Add padding around the input field */
+  font-size: 16px; /* Set font size for the input field */
+  margin-bottom: 20px; /* Add bottom margin to separate from next element */
+}
+
+/* Style for the start button */
+#startButton {
+  padding: 10px 20px; /* Add padding to the button */
+  font-size: 16px; /* Set font size for the button text */
+  background-color: #007bff; /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Hover effect for the start button */
+#startButton:hover {
+  background-color: #0056b3; /* Darken background color on hover */
+}
+
+/* Styles for the quiz questions container */
+#questions-container {
+  margin: 20px auto; /* Center the container horizontally with some top margin */
+  width: 80%; /* Set width to 80% of the parent container */
+  max-width: 600px; /* Set maximum width for responsiveness */
+}
+
+/* Styles for the form elements */
+form {
+  margin-bottom: 20px; /* Add bottom margin to separate from next element */
+}
+
+/* Styles for radio input elements */
+input[type="radio"] {
+  margin-right: 5px; /* Add margin to the right of radio inputs */
+}
+
+/* Styles for feedback messages */
+.feedback {
+  font-style: italic; /* Set font style to italic for feedback messages */
+}
+
+/* Styles for correct feedback */
+.feedback.correct {
+  color: green; /* Set color to green for correct feedback */
+}
+
+/* Styles for incorrect feedback */
+.feedback.incorrect {
+  color: red; /* Set color to red for incorrect feedback */
+}
+
+/* Styles for submit and restart buttons */
+#submitButton,
+#restart {
+  display: block; /* Display as block-level elements */
+  margin: 20px auto; /* Center horizontally with some top margin */
+  padding: 10px 20px; /* Add padding to the buttons */
+  background-color: #007bff; /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Disabled state for submit button */
+#submitButton:disabled {
+  background-color: #ccc; /* Change background color to gray */
+  cursor: not-allowed; /* Set cursor to not-allowed */
+}
+
+/* Styles for the score display */
+#score {
+  text-align: right; /* Align to the right side */
+  font-size: 20px; /* Set font size */
+  margin-top: 20px; /* Add top margin */
+  margin-right: 10%; /* Add right margin for positioning */
+}
+
+/* .main-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+h1{
+  color: #007bff;
+}
+.container{
+  background-color: rgba(0, 0, 0, 0.09);
+  padding: 50px;
+} */
+
+/* style.css */
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Main container styles */
+.main-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Headline styles */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container item styles */
+.container-item {
+  margin-bottom: 15px;
+}
+
+/* Label styles */
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Textarea styles */
+textarea,select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+/* Submit button styles */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+.alert {
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Style for alert message */
+.alert-message {
+  color: #721c24; /* Dark red color */
+  background-color: #f8d7da; /* Light red background color */
+  border: 1px solid #f5c6cb; /* Border color */
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 0;
+}
